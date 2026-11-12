@@ -1,0 +1,11 @@
+{
+  "orders": [
+    { "id": "CHK-001", "name": "single item order completes", "products": ["Sauce Labs Backpack"], "customer": { "firstName": "Sara", "lastName": "Ahmed", "postalCode": "11511" } },
+    { "id": "CHK-002", "name": "multi item order completes with correct totals", "products": ["Sauce Labs Bike Light", "Sauce Labs Bolt T-Shirt", "Sauce Labs Fleece Jacket"], "customer": { "firstName": "Omar", "lastName": "Hassan", "postalCode": "21577" } }
+  ],
+  "validation": [
+    { "id": "CHK-010", "name": "first name is required", "customer": { "lastName": "Ahmed", "postalCode": "11511" }, "error": "First Name is required" },
+    { "id": "CHK-011", "name": "last name is required", "customer": { "firstName": "Sara", "postalCode": "11511" }, "error": "Last Name is required" },
+    { "id": "CHK-012", "name": "postal code is required", "customer": { "firstName": "Sara", "lastName": "Ahmed" }, "error": "Postal Code is required" }
+  ]
+}

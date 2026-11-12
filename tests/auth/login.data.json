@@ -1,0 +1,13 @@
+{
+  "valid": [
+    { "id": "AUTH-001", "name": "standard user signs in and lands on products", "username": "standard_user" },
+    { "id": "AUTH-002", "name": "performance glitch user still signs in (slow response)", "username": "performance_glitch_user" }
+  ],
+  "invalid": [
+    { "id": "AUTH-010", "name": "locked out user is refused", "username": "locked_out_user", "password": "$PASSWORD", "error": "Sorry, this user has been locked out." },
+    { "id": "AUTH-011", "name": "wrong password is refused", "username": "standard_user", "password": "wrong_password", "error": "Username and password do not match any user in this service" },
+    { "id": "AUTH-012", "name": "unknown user is refused", "username": "no_such_user", "password": "$PASSWORD", "error": "Username and password do not match any user in this service" },
+    { "id": "AUTH-013", "name": "empty username shows a required error", "username": "", "password": "$PASSWORD", "error": "Username is required" },
+    { "id": "AUTH-014", "name": "empty password shows a required error", "username": "standard_user", "password": "", "error": "Password is required" }
+  ]
+}
